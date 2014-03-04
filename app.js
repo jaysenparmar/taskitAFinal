@@ -52,6 +52,8 @@ app.get('/invitefriends.handlebars', invitefriends.view);
 app.get('/signup', signup.signup);
 app.get('/add', dashboard.addTask);
 app.get('/remove', dashboard.removeTask);
+app.get('/invitefriends', invitefriends.mail);
+app.get('/forgotpass', forgotpassword.forgotpass);
 
 
 http.createServer(app).listen(app.get('port'), function(){
