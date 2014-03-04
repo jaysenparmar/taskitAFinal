@@ -1,0 +1,402 @@
+body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+h1 {
+  margin: 10px 0px;
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 700;
+}
+h2 {
+  margin: 10px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 400;
+}
+h3 {
+  margin: 10px 0px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+h4 {
+  margin: 10px 0px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+h5 {
+  margin: 10px 0px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+h6 {
+  margin: 10px 0px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+p {
+  margin-bottom: 5px;
+  float: right;
+}
+.button {
+  display: inline;
+  width: auto;
+  margin-right: 30px;
+  margin-left: 30px;
+  padding: 15px 10px 25px;
+  float: none;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.topdiv {
+  border-bottom: 1px solid black;
+  background-image: -webkit-linear-gradient(#496b8a, #353c66);
+  background-image: -o-linear-gradient(#496b8a, #353c66);
+  background-image: linear-gradient(#496b8a, #353c66);
+}
+.bottomdiv {
+  border-top: 1px solid black;
+  background-image: -webkit-linear-gradient(#496b89, #353c66);
+  background-image: -o-linear-gradient(#496b89, #353c66);
+  background-image: linear-gradient(#496b89, #353c66);
+}
+.misc_buttons {
+  display: inline;
+}
+.add_button {
+  display: inline;
+}
+.button_container {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: inline-block;
+  overflow-x: auto;
+  overflow-y: auto;
+  float: none;
+  clear: none;
+}
+.home_button {
+  margin-left: 55px;
+}
+.task {
+  display: block;
+  float: right;
+  font-family:'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: right;
+}
+.user_tasklist {
+  margin-bottom: 5px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+}
+@media (max-width: 479px) {
+  body {
+    overflow-x: visible;
+    overflow-y: visible;
+    background-color: white;
+    color: #333;
+  }
+  h1 {
+    display: block;
+    margin: 10px auto 20px;
+    font-family:'Open Sans', sans-serif;
+    color: black;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+  }
+  h2 {
+    margin-top: 65px;
+    margin-left: 15px;
+  }
+  h3 {
+    text-align: center;
+  }
+  p {
+    display: block;
+    width: 300px;
+    min-width: 0px;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-left: auto;
+    padding-bottom: 0px;
+    float: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00bd68;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .button {
+    display: inline-block;
+    margin: 15px 30px 5px;
+    padding: 5px;
+    float: none;
+    background-color: transparent;
+  }
+  .button:active {
+    background-color: #008073;
+  }
+  .button.settings_buttons {
+    position: static;
+    display: block;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    background-color: #00bd68;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 26px;
+  }
+  .topdiv {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom-color: #12a362;
+    background-color: #00bd87;
+    background-image: none;
+    background-position: 0% 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+  }
+  .bottomdiv {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    border-top-color: #12a362;
+    background-color: #00bd87;
+    background-image: none;
+    background-position: 0% 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+  }
+  .add_button {
+    display: block;
+    margin-right: 0px;
+  }
+  .button_container {
+    position: static;
+    left: 0px;
+    top: 0px;
+    right: 260px;
+    bottom: 0px;
+    display: inline-block;
+    overflow-x: visible;
+    overflow-y: visible;
+    float: none;
+    clear: none;
+  }
+  .home_button {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+  }
+  .task {
+    margin-right: 20px;
+    padding-left: 90px;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: right;
+  }
+  .user_tasklist {
+    position: static;
+  }
+  .add_screen {
+    position: static;
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 60px auto 20px;
+    float: none;
+    text-align: left;
+  }
+  .form_names {
+    display: block;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-left: 25px;
+  }
+  .form_submit {
+    display: inline-block;
+    margin-left: 150px;
+    float: left;
+    clear: none;
+    background-color: #1c86ff;
+  }
+  .login_buttons {
+    position: static;
+    display: inline-block;
+    margin-left: 75px;
+    float: none;
+  }
+  .login_logo {
+    position: static;
+    display: block;
+    width: auto;
+    height: auto;
+  }
+  .form_field {
+    margin-bottom: 20px;
+    opacity: 1;
+  }
+  .login_submit {
+    display: block;
+    height: auto;
+    margin: 10px auto 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    clear: none;
+    border-radius: 10px;
+    background-color: #00bd68;
+    text-align: center;
+  }
+  .signup_button {
+    display: block;
+    width: 95px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    background-color: #005e32;
+  }
+  .add_submit {
+    display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    background-color: #00bd68;
+  }
+  .splash {
+    display: block;
+    margin-top: 12px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .link_buttons {
+    margin: 10px 0px 5px;
+    padding-left: 0px;
+  }
+  .bottom_buttons {
+    position: static;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    overflow-x: visible;
+    overflow-y: visible;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-right: 0px;
+    padding-left: 0px;
+    float: none;
+  }
+  .login_links {
+    display: block;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    text-align: center;
+  }
+  .about_links {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .forgot_password_links {
+    display: block;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+    text-align: center;
+  }
+  .settings_div {
+    margin-top: 100px;
+  }
+  .directions {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .top_buttons {
+    margin-right: 5px;
+    margin-left: 15px;
+    float: none;
+  }
+  .button_div {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    float: right;
+  }
+  .remove {
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  .form_entry {
+    display: block;
+    width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  .dash_name {
+    clear: none;
+    color: #50876a;
+  }
+  .task_div {
+    display: block;
+    overflow-x: visible;
+    overflow-y: visible;
+  }
+  .main_title {
+    font-size: 48px;
+  }
+  .invite {
+    display: block;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 16px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Mon Mar 03 2014 01:59:41 GMT+0000 (UTC) -->
+<html data-wf-site="5313daee91b9b9821900063a">
+<head>
+  <meta charset="utf-8">
+  <title>Chore App v2.0 - Add Task</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/taskita.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Open Sans:300,400,600,700,800"]
+      }
+    });
+  </script>
+  <script>
+    if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
+  </script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+</head>
+<body>
+  <div>
+    <div class="w-clearfix topdiv">
+      <a class="w-inline-block link_buttons" href="dashboard.html">
+        <img class="home_button" src="images/logo.png" width="100" alt="53128274c7c756c67d00064b_logo.png">
+      </a>
+      <div class="button_div">
+        <a class="w-inline-block" href="add.html">
+          <img class="top_buttons" src="images/addsmall.png" width="30" height="30" alt="5312a60bd49ce90e6f0006ae_addsmall.png">
+        </a>
+        <a class="w-inline-block" href="invitefriends.html">
+          <img class="top_buttons" src="images/addfriendsmall.png" width="30" height="30" alt="5313dbf7501ffd3920000760_addfriendsmall.png">
+        </a>
+        <a class="w-inline-block" href="index.html">
+          <img class="top_buttons" src="images/logout.png" width="30" height="30" alt="530f6bfea531aa32030000d9_logout.png">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <img class="add_screen" src="images/add.png" width="250" height="250" alt="5312aac10005430c6f0005ad_add.png">
+  </div>
+  <h1>Add a Task</h1>
+  <div class="w-form">
+    <form name="email-form" data-name="Email Form">
+      <label class="form_names" for="name">Task Name</label>
+      <input class="w-input form_entry" type="text" placeholder="Enter the task name" name="name" data-name="Name" required="required"></input>
+      <label class="form_names">User</label>
+      <select class="w-select form_entry" name="dropdown" required="required">
+        <option value="">Select one...</option>
+        <option value="First">First Choice</option>
+        <option value="Second">Second Choice</option>
+        <option value="Third">Third Choice</option>
+      </select>
+      <input class="w-button add_submit" type="submit" value="Add" data-wait="Please wait..."></input>
+    </form>
+    <div class="w-form-done">
+      <p>Thank you! Your submission has been received!</p>
+    </div>
+    <div class="w-form-fail">
+      <p>Oops! Something went wrong while submitting the form :(</p>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+</body>
+</html>

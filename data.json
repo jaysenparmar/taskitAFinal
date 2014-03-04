@@ -1,0 +1,150 @@
+{
+	"Group": [
+		{
+			"groupname": "GroupA",
+			"grouppassword": "group",
+                "Members": [
+                    {
+                        "id": 0, 
+                        "name": "Cesar",
+                        "email": "cecisner@ucsd.edu",
+                        "password": "group2",
+                            "Tasks": [
+                                {
+                                    "date": "January 9, 2014",
+                                    "taskid": 0,
+                                    "style": "",
+                                    "taskname": "Pay bills",
+                                    "ownerid": 0,
+                                    "ownername": "Cesar"
+                                },
+                                {
+                                    "date": "January 16, 2014",
+                                    "taskid": 1,
+                                    "taskname": "Replace bathroom lightbulbs",
+                                    "ownerid": 0,
+                                    "ownername": "Cesar"
+                                }
+                            ]
+                    },
+                    {
+                        "id": 1, 
+                        "name": "Jaysen",
+                        "email": "jparmar@ucsd.edu",
+                        "password": "group2",
+                            "Tasks": [
+                                {
+                                    "date": "January 16, 2014",
+                                    "taskid": 0,
+                                    "taskname": "Clean the garage",
+                                    "ownerid": 1,
+                                    "ownername": "Jaysen"
+                                },
+                                {
+                                    "date": "January 23, 2014",
+                                    "taskid": 1,
+                                    "taskname": "Feed the fish",
+                                    "ownerid": 1,
+                                    "ownername": "Jaysen"
+                                }
+                            ]
+                    },
+                    {
+                        "id": 2, 
+                        "name": "Sarah",
+                        "email": "s4vu@ucsd.edu",
+                        "password": "group2",
+                            "Tasks": [
+                                {
+                                    "date": "January 23, 2014",
+                                    "taskid": 0,
+                                    "taskname": "Clean living room",
+                                    "ownerid": 2,
+                                    "ownername": "Sarah"
+                                },
+                                {
+                                    "date": "January 30, 2014",
+                                    "taskid": 1,
+                                    "taskname": "Take out the trash",
+                                    "ownerid": 2,
+                                    "ownername": "Sarah"
+                                }
+                            ]
+                    }
+                ]
+		},
+        {
+            "groupname": "GroupB",
+			"grouppassword": "groupgroup",
+                "Members": [
+                    {
+                        "id": 0, 
+                        "name": "Steven",
+                        "email": "steven@ucsd.edu",
+                        "password": "group3",
+                            "Tasks": [
+                                {
+                                    "date": "January 10, 2014",
+                                    "taskid": 0,
+                                    "taskname": "Mow the lawn",
+                                    "ownerid": 0,
+                                    "ownername": "Steven"
+                                },
+                                {
+                                    "date": "January 26, 2014",
+                                    "taskid": 1,
+                                    "taskname": "Replace the smoke detectors",
+                                    "ownerid": 0,
+                                    "ownername": "Steven"
+                                }
+                            ]
+                    },
+                    {
+                        "id": 1, 
+                        "name": "Terrance",
+                        "email": "terry@ucsd.edu",
+                        "password": "group3",
+                            "Tasks": [
+                                {
+                                    "date": "January 16, 2014",
+                                    "taskid": 0,
+                                    "taskname": "Clean the kitchen",
+                                    "ownerid": 1,
+                                    "ownername": "Terrance"
+                                },
+                                {
+                                    "date": "January 10, 2014",
+                                    "taskid": 1,
+                                    "taskname": "Feed the cat",
+                                    "ownerid": 1,
+                                    "ownername": "Terrance"
+                                }
+                            ]
+                    },
+                    {
+                        "id": 2, 
+                        "name": "Vanessa",
+                        "email": "vanessa@ucsd.edu",
+                        "password": "group3",
+                            "Tasks": [
+                                {
+                                    "date": "January 12, 2014",
+                                    "taskid": 0,
+                                    "taskname": "Rake the leaves",
+                                    "ownerid": 2,
+                                    "ownername": "Vanessa"
+                                },
+                                {
+                                    "date": "January 11, 2014",
+                                    "taskid": 1,
+                                    "taskname": "Clean the toilets",
+                                    "ownerid": 2,
+                                    "ownername": "Vanessa"
+                                }
+                            ]
+                    }
+                ]
+        }
+    ]
+}
+	
