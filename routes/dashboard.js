@@ -9,7 +9,7 @@ exports.view = function(req, res) {
 	}*/
       //  var rmv = false;
     
-        res.render('dashboard', data.Group[req.session.userID]);   
+        res.render('dashboard', data.Group[req.session.groupID]);   
 }
 
 exports.login = function(req,res){
@@ -23,13 +23,14 @@ exports.login = function(req,res){
            // console.log("2nd for loop");
             if(user.email == data.Group[i].Members[j].email && user.password == data.Group[i].Members[j].password) {
                 //console.log(" " + user.email + data.Group[i].Members[j].email + user.password + data.Group[i].Members[j].password);
-                req.session.userID = data.Group[i].Members[i].id;
+                req.session.userID = data.Group[i].Members[j].id;
+                req.session.groupID = i;
                 found = true;
               //  console.log("Rendering dashboard Grouppage");
                 
                 //Need to render dashboard page correctly with handlebars
                 if(found){
-                res.render('dashboard', data.Group[i]);
+                res.render('dashboard', data.Group[req.session.groupID]);
                 }
                 break;
             }	
@@ -76,7 +77,7 @@ exports.addTask = function(req, res) {
                 data.Group[i].Members[j].Tasks.push(task);
                 console.log(data.Group[i].Members[j].Tasks);
                 if(found){
-                res.render('dashboard', data.Group[i]);
+                res.render('dashboard', data.Group[req.session.groupID]);
                 }
                 break;
             }	
@@ -115,7 +116,7 @@ exports.removeTask = function(req, res) {
                        // console.log("Removing task");
                         delete data.Group[i].Members[k].Tasks[j].taskname;
                         //console.log("After: " + data.Group[i].Members[k].Tasks[j].taskname);
-                        res.render('dashboard', data.Group[i]);
+                        res.render('dashboard', data.Group[req.session.groupID]);
                 }//end if
             } //end j        
         }//end k

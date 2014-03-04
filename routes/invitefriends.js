@@ -41,7 +41,7 @@ smtpTransport.sendMail(mailOptions, function(error, response){
         console.log(error);
     }else{
         console.log("Message sent: " + response.message);
-        res.render('dashboard', data.Group[req.session.userID]);
+        res.render('dashboard', data.Group[req.session.groupID]);
     }
     
     
