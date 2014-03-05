@@ -18,7 +18,5 @@ function initializePage() {
 
 function analytics(e){
      
-   ga("send","event","invite","click");
-
-    
+   ga("send","event","invite","click");    
 }
