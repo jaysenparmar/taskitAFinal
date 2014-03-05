@@ -31,7 +31,7 @@ var mailOptions = {
     to: email1, // list of receivers
     subject: "Hello", // Subject line
     text: "Join our App", // plaintext body
-    html: "<b>Hello " + name1 +", your friend has just sent you an invitation to join our app at taskita.herokuapp.com.</b>" // html body
+    html: "<b>Hello " + name1 +", your friend has just sent you an invitation to join our app at taskitapplication.herokuapp.com.</b>" // html body
 
 }
 
