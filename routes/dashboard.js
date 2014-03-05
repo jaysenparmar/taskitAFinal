@@ -8,8 +8,20 @@ exports.view = function(req, res) {
 		res.render('./index');
 	}*/
       //  var rmv = false;
+        data.Group[req.session.groupID].viewAddLink = false;
+        res.render('dashboard', data.Group[req.session.groupID]);
     
-        res.render('dashboard', data.Group[req.session.groupID]);   
+}
+
+exports.viewAddLink = function(req, res) { 
+    /*
+	if(!req.session.userID || req.session.userID == -1){
+		res.render('./index');
+	}*/
+      //  var rmv = false;
+        data.Group[req.session.groupID].viewAddLink = true;
+        res.render('dashboard', data.Group[req.session.groupID]);
+    
 }
 
 exports.login = function(req,res){
@@ -30,7 +42,12 @@ exports.login = function(req,res){
                 
                 //Need to render dashboard page correctly with handlebars
                 if(found){
+                 /*    $('.invite').click(function(e){ 
+                    ga("send","event","inviteFriends","click");
+                    });*/
                 res.render('dashboard', data.Group[req.session.groupID]);
+                   
+                    
                 }
                 break;
             }	
@@ -117,6 +134,7 @@ exports.removeTask = function(req, res) {
                         delete data.Group[i].Members[k].Tasks[j].taskname;
                         //console.log("After: " + data.Group[i].Members[k].Tasks[j].taskname);
                         res.render('dashboard', data.Group[req.session.groupID]);
+                    
                 }//end if
             } //end j        
         }//end k
@@ -124,3 +142,4 @@ exports.removeTask = function(req, res) {
     
     //console.log("Something went terribly wrong");
 }
+

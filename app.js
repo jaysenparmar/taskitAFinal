@@ -54,6 +54,7 @@ app.get('/add', dashboard.addTask);
 app.get('/remove', dashboard.removeTask);
 app.get('/invitefriends', invitefriends.mail);
 app.get('/forgotpass', forgotpassword.forgotpass);
+app.get('/viewAddLink', dashboard.viewAddLink);
 
 
 http.createServer(app).listen(app.get('port'), function(){
